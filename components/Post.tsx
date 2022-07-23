@@ -28,7 +28,7 @@ const Post: React.FC<{ post: PostProps }> = ({ post }) => {
     >
       <Heading size="md">{post.title}</Heading>
       <Text fontSize="sm">By {authorName}</Text>
-      <ReactMarkdown source={post.content} />
+      <ReactMarkdown children={post.content} />
     </Box>
   );
 };
